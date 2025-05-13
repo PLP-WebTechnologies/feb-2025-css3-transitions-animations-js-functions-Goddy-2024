@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Button with Hover Transition */
+#action-btn {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#action-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Animated Box */
+#animated-box {
+    width: 100px;
+    height: 100px;
+    background: #e74c3c;
+    margin: 30px auto;
+    border-radius: 10px;
+    transition: transform 0.5s, background 0.5s;
+}
+
+/* Animation when 'animate' class is added */
+#animated-box.animate {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); background: #f39c12; }
+    100% { transform: scale(1); }
+}
+
+.preferences {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
